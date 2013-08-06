@@ -600,6 +600,10 @@ category menu
     main-page-products
 */
 
+.main-page-products-wrapper{
+    margin-bottom: 30px;
+}
+
 .part-title-wrap{
     border-bottom: 1px solid #000;
     z-index: 1;
@@ -631,7 +635,11 @@ category menu
 .main-page-article-outer{
     width: 33.33%;
     height: 350px;  /*temp*/
-    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.main-page-article-outer:first-child{
+    padding-left: 0;
 }
 
 .main-page-product{
