@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="no-js">    
+    <head>
+      <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Watches</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="web_icons.css">
+        <link rel="stylesheet" href="media.css">
+        <link rel="stylesheet" href="plugins.css">
+        <script src="js/libs/modernizr-2.6.2.min.js"></script>
+        
+        <!-- don't delete -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
+        <!-- don't delete -->
+          <script src="js/functions.js"></script>
+           <script src="js/libs/plugins.js"></script>
+    </head>
+<body class="main-wrapper rel">
+
+<script type="text/javascript">
+
+    $(function () {
+        $('.rs-slider').refineSlide({
+maxWidth              : 1200,      // Max slider width - should be set to image width
+transition            : 'random',  // String (default 'cubeV'): Transition type ('custom', random', 'cubeH', 'cubeV', 'fade', 'sliceH', 'sliceV', 'slideH', 'slideV', 'scale', 'blockScale', 'kaleidoscope', 'fan', 'blindH', 'blindV')
+fallback3d            : 'sliceV', // String (default 'sliceV'): Fallback for browsers that support transitions, but not 3d transforms (only used if primary transition makes use of 3d-transforms)
+customTransitions     : [],       // Arr (Custom transitions wrapper)
+perspective           : 1000,      // Perspective (used for 3d transforms)
+useThumbs             : false,     // Bool (default true): Navigation type thumbnails
+useArrows             :true,   // Bool (default false): Navigation type previous and next arrows
+thumbMargin           : 3,        // Int (default 3): Percentage width of thumb margin
+autoPlay              : true,    // Int (default false): Auto-cycle slider
+delay                 : 5000,       // Int (default 5000) Time between slides in ms
+transitionDuration    : 800,      // Int (default 800): Transition length in ms
+startSlide            : 0,        // Int (default 0): First slide
+keyNav                : true,     // Bool (default true): Use left/right arrow keys to switch slide
+captionWidth          : 50,       // Int (default 50): Percentage of slide taken by caption
+arrowTemplate         : '<div class="rs-arrows"><a href="#" data-icon="&#x61;" class="rs-prev"></a><a href="#" data-icon="&#x62;" class="rs-next"></a></div>', // String: The markup used for arrow controls (if arrows are used). Must use classes '.rs-next' & '.rs-prev'
+onInit                : function () {}, // Func: User-defined, fires with slider initialisation
+onChange              : function () {}, // Func: User-defined, fires with transition start
+afterChange           : function () {}  // Func: User-defined, fires after transition end
+        });
+    });
+
+</script>
+
+
+
+    <header class="site-header cf">
+        <h1 class="site-name fl">
+            <a href="/" class="site-name-url">
+                <img src="logo.jpg" alt="site's logo" width="300" height="80">
+            </a>
+            <!-- <a href="/">название сайта</a> -->
+        </h1><!-- site-name -->
+
+        <div class="ml-wrapper fr cf">
+            <section class="top-menu">
+                <nav class="top-menu-items cf">
+                    <a href="#" class="fl active">главная</a>
+                    <a href="#" class="fl">контакт</a>
+                    <a href="#" class="fl">о нас</a>
+                    <a href="#" class="fl">новости</a>
+                </nav>
+            </section> <!-- top-menu -->
+
+            <div class="login-form">
+                <section class="login">
+                    <a href="/"class="login-open" data-icon="&#x2f;" title="войти">
+                    </a>
+                </section><!-- login -->
+            </div><!-- login-form -->
+
+            <div class="cart-outer cf">  
+                <div class="cart fr rel cr">
+                    <div class="cart-inner">
+                        <span class="basket">корзина</span> <span class="cart_items_count">1</span>
+                    </div><!-- cart-inner -->
+                    <section class="mini-cart abs">
+                    <div class="mini-cart-info empty">
+                        <h3 style="text-align:center;">Ваша корзина пуста </h3>
+                    </div>
+                    </section>
+                </div><!-- cart -->
+            </div><!-- cart-outer -->
+        </div> <!-- ml-wrapper -->
+
+
+    </header> <!-- site-header -->
+    <section class="searchbox abs">
+
+<form class="searchform cf" method="get" action="/search" id="searchbox">
+        <div class="input-border fl">
+            <input class="txt" type="search" name="q" value="Поиск" onfocus="if(this.value==this.defaultValue){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}">
+
+        </div>
+            <a class="submit-button fl" data-icon="&#x4b;" href="javascript:document.getElementById('searchbox').submit();"></a>
+        </form>
+    </section><!-- searchbox -->
+    <nav class="main-categorires-wrap rel">
+        <menu class="main-cat cf rel">
+            <li class="item active fl  buttons rel sub-parent">
+                <a href="category.html" class="rel hassub">мужские часы</a>
+                <ul>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li class="subsub-parent">
+                        <a href="category.html" class="hassub">подменю</a>
+                        
+                     <ul>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li class="subsub-parent">
+                        <a href="category.html" class="hassub">подменю</a>
+                                             <ul>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li class="subsub-parent">
+                        <a href="category.html" class="hassub">подменю</a>
+                    </li>
+                    <li><a href="category.html">подменю</a></li>
+                </ul>
+                    </li>
+                    <li><a href="category.html">подменю</a></li>
+                </ul>
+
+                    </li>
+                    <li><a href="category.html">подменю</a></li>
+                </ul>
+            </li>
+            <li class="item fl buttons rel sub-parent">
+                <a href="category.html" class="rel hassub">женские часы</a>
+                                <ul>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li class="subsub-parent">
+                        <a href="category.html" class="hassub">подменю</a>
+                        
+                     <ul>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li class="subsub-parent">
+                        <a href="category.html" class="hassub">подменю</a>
+                                             <ul>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li><a href="category.html">подменю меню</a></li>
+                    <li class="subsub-parent">
+                        <a href="category.html" class="hassub">подменю</a>
+                    </li>
+                    <li><a href="category.html">подменю</a></li>
+                </ul>
+                    </li>
+                    <li><a href="category.html">подменю</a></li>
+                </ul>
+
+                    </li>
+                    <li><a href="category.html">подменю</a></li>
+                </ul>
+            </li>
+            <li class="item fl buttons rel">
+                <a href="category.html" class="rel">часы unisex</a>
+            </li>
+            <li class="item fl buttons rel">
+                <a href="category.html" class="rel">брендовые часы</a>
+            </li>
+        </menu><!-- main-cat -->
+    </nav> <!-- main-categoires-wrap -->
+    <div class="slider cf cb" >
+      <ul class="rs-slider">
+        
+        <li>
+          <a href="item.html">
+            <img src="slide.jpg" alt="slider image" />
+            </a>
+        </li>
+
+        <li>
+          <a href="item.html">
+            <img src="slide1.jpg" alt="slider image" />
+            </a>
+        </li>
+
+        <li>
+          <a href="item.html">
+            <img src="slide2.jpg" alt="slider image" />
+            </a>
+        </li>
+
+        <li>
+          <a href="item.html">
+            <img src="slide3.jpg" alt="slider image" />
+            </a>
+        </li>
+
+    </ul>
+</div>  <!-- slider -->
+<div class="banners cf">
+    <div class="banner-outer">
+        <figure class="banner rel">
+            <a href="" class="banner-url-container">
+                <img src="banner.png" alt="">
+         
+                <figcaption class="caption abs">  
+                    <p>Часы Franck Muller</p>
+                    <span>Наручные часы Franck Muller</span>
+                </figcaption>   
+            <span class="ban-read-more abs">подробнее...</span>
+            </a>
+
+        </figure>
+    </div>
+    <div class="banner-outer">
+        <figure class="banner rel">
+            <a href="" class="banner-url-container">
+                <img src="banner1.png" alt="">
+         
+                <figcaption class="caption abs">  
+                    <p>Новые коллекции часов Edox</p>
+                    <span>В продажу поступили часы Edox</span>
+                </figcaption>   
+            <span class="ban-read-more abs">подробнее...</span>
+            </a>
+
+        </figure>
+    </div>
+    <div class="banner-outer">
+        <figure class="banner rel">
+            <a href="" class="banner-url-container">
+                <img src="banner2.png" alt="">
+         
+                <figcaption class="caption abs">  
+                    <p>отличний подарок себе и близким</p>
+                    <span>Он не забудет</span>
+                </figcaption>   
+            <span class="ban-read-more abs">подробнее...</span>
+            </a>
+
+        </figure>
+    </div>
+</div>
+    <footer class="site-footer"> 
+        
+    </footer> <!-- site-footer -->
+</body>
+</html>
