@@ -9,6 +9,7 @@
 body{
 	font-size: 100%;
     font-family:  "Trebuchet MS",Arial,Helvetica,sans-serif;
+    color: #a3a3a3;
 }
 
 a, a:visited, a:active, a:link, a:focus {
@@ -49,7 +50,21 @@ li{
     text-decoration: none;
 }
 
+.new-price{
+    font-weight: bold;
+    color: #000;
+    font-size: 1.38em;
+    line-height: 1.38em;
+    font-style: italic;
+}
 
+.old-price{
+    text-decoration: line-through;
+    font-style: italic;
+    color: #c7c7c7;
+    font-size: 1.25em;
+    margin-left: 0.3em;
+}
 
 /*THE END of globals for this theme*/
 
@@ -634,18 +649,114 @@ category menu
 
 .main-page-article-outer{
     width: 33.33%;
-    height: 350px;  /*temp*/
-    padding-left: 30px;
+    padding: 7px;
+    padding-bottom: 20px;
 }
 
-.main-page-article-outer:first-child{
-    padding-left: 0;
-}
+
 
 .main-page-product{
     width: 100%;
     height: 100%;
-    background-color: #9c0;
+}
+
+.mp-product-image{
+    margin-right: 10px;
+}
+
+.mp-product-title a{
+    font-size: 0.81em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+}
+
+.mp-product-title a:hover{
+    color: #A9A9A9;
+}
+
+
+.mp-product-description{
+    font-style: italic;
+    font-size: 0.81em;
+    line-height: 1.13em;
+}
+
+.mp-product-price{
+    padding: 10px 0;
+}
+
+.mp-product-buy .buttons{
+    font-size: 1.5em;
+    color: #CECECE;
+    width: 2.08em;
+    height:2.08em;
+    padding: 0;
+    text-align: center;
+    margin-right: -1px;
+    z-index: 2;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.mp-product-buy .buttons:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    top:10px;
+    left:0;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.mp-product-buy .buttons:hover:before{
+    top:-150%;
+}
+
+.mp-product-buy .buttons:after{
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    bottom:-50px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+     -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    color: #000;
+}
+
+.mp-product-buy .buttons:hover:after{
+    bottom: -11px;
+}
+
+
+.mp-product-buy .info:before, .mp-product-buy .info:after{
+    padding-top: 3px;
+}
+
+.mp-product-buy .buttons:hover{
+    z-index: 3;
+    border: 1px solid #020202;
 }
 
 /*
