@@ -273,6 +273,10 @@
     
 }
 
+.nbs-flexisel-container{
+    overflow: hidden;
+}
+
 .nbs-flexisel-nav-left, 
 .nbs-flexisel-nav-right{
     position: absolute;
