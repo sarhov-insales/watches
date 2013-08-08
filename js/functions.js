@@ -104,7 +104,47 @@ return false;
 
 
 
-// carousel
+
+
+// quantity
+
+$(function(){
+   $('.plus').click(function(e){
+           e.preventDefault();
+     var qwt = $(this).parents('.quantity:first').find('.qwt').val();
+           qwt = ++qwt;  
+           $(this).parents('.quantity:first').find('.qwt').val(qwt);
+           $(this).parents('.quantity:first').find('.qwt2').val(qwt).trigger('change');
+     
+          recalcAmount(this);
+          });
+          $('.minus').click(function(e){
+           e.preventDefault();
+           var qwt = $(this).parents('.quantity:first').find('.qwt').val();
+           qwt = --qwt;  
+             if (qwt == 0){return false;
+             } else {
+             $(this).parents('.quantity:first').find('.qwt').val(qwt);
+             $(this).parents('.quantity:first').find('.qwt2').val(qwt).trigger('change');  
+              recalcAmount(this);  
+             }
+           });
+
+ });
+
+
+
+
+
+
+
+
+// don't delete the end of document ready
+
+});
+
+$(window).load(function() {
+  // carousel
 
 
 $("#carousel").flexisel({
@@ -153,41 +193,8 @@ changePoint:768,
 visibleItems: 5
 }
 }
+
 });
 
-// quantity
-
-$(function(){
-   $('.plus').click(function(e){
-           e.preventDefault();
-     var qwt = $(this).parents('.quantity:first').find('.qwt').val();
-           qwt = ++qwt;  
-           $(this).parents('.quantity:first').find('.qwt').val(qwt);
-           $(this).parents('.quantity:first').find('.qwt2').val(qwt).trigger('change');
-     
-          recalcAmount(this);
-          });
-          $('.minus').click(function(e){
-           e.preventDefault();
-           var qwt = $(this).parents('.quantity:first').find('.qwt').val();
-           qwt = --qwt;  
-             if (qwt == 0){return false;
-             } else {
-             $(this).parents('.quantity:first').find('.qwt').val(qwt);
-             $(this).parents('.quantity:first').find('.qwt2').val(qwt).trigger('change');  
-              recalcAmount(this);  
-             }
-           });
-
- });
-
-
-
-
-
-
-
-
-// don't delete the end of document ready
-
+// don't remove this one
 });

@@ -200,6 +200,7 @@
     display: table;
     margin: 0 auto;
     overflow: hidden;
+    z-index: 9000 !important;
 }
 
 #zoomik .cloud-zoom-big{
@@ -222,7 +223,7 @@
     text-align:center;  
     font-weight:bold;
     font-size:10px;
-  bottom:0px;
+    bottom:0px;
 }
 
 /*
@@ -233,6 +234,14 @@
     carousel
 */
 
+
+#carousel{
+    border-bottom-image: none;
+}
+
+.nbs-flexisel-ul #carousel{
+    display: block;
+}
 
 #carousel li{
     float: left;
@@ -289,7 +298,7 @@
     transition: all 0.5s;
 }
 
-.zoom:hover .nbs-flexisel-nav-left, .zoom:hover .nbs-flexisel-nav-right{
+.nbs-flexisel-inner:hover .nbs-flexisel-nav-left, .nbs-flexisel-inner:hover .nbs-flexisel-nav-right{
     opacity: 1;
 }
 

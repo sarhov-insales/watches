@@ -1156,3 +1156,45 @@ content-wrapper
 /*
     THE END theme styles
 */
+
+
+.no-js .loading{
+    display: none !important;
+}
+
+.loading{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    overflow: hidden;
+    text-align: center;
+}
+
+.loading h1{
+    font-size: 1.9em;
+    text-transform: capitalize;
+}
+
+.loading h1, .loading img{
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.loading:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  background: #fff; 
+ }
+
+.site-title-loading{
+     display: inline-block;
+  vertical-align: middle;
+  padding: 10px 15px;
+}
