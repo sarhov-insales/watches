@@ -143,10 +143,16 @@ $(function(){
 
 });
 
+
+
+
 $(window).load(function() {
+
+// preloader
+$('.loading').addClass('loading-out');
+
+
   // carousel
-
-
 $("#carousel").flexisel({
 visibleItems: 3,
 animationSpeed: 1000,
@@ -196,5 +202,6 @@ visibleItems: 5
 
 });
 
-// don't remove this one
+// don't remove the window ready
+
 });

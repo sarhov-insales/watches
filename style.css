@@ -98,6 +98,38 @@ li{
     line-height: 1.38em;
 }
 
+
+.editor{
+    font-size: 0.81em;
+    color: #a3a3a3;
+    line-height: 1.6;
+}
+
+.editor ul li:before{
+    content:"\66";
+     font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 3px;
+    color: #000;
+}
+
+.editor strong{
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+}
+
+.editor em{
+    font-style: italic;
+    color: #888787;
+}
+
 /*THE END of globals for this theme*/
 
 /*theme styles*/
@@ -1021,11 +1053,6 @@ content-wrapper
     font-size: 0.81em;
 }
 
-.item-description{
-    font-size: 0.81em;
-    color: #a3a3a3;
-    line-height: 1.6;
-}
 
 .count-in-stock{
     padding-top: 10px;
@@ -1131,6 +1158,27 @@ content-wrapper
     font-size: 1.3em;
     margin-right: 5px;
 }
+
+.item-rotate-image{
+    display: block;
+}
+
+.item-rotate-title{
+    font-weight: bold;
+    font-size: 0.81em;
+    text-transform: uppercase;
+    line-height: 1.13em;
+    color: #000;
+}
+
+.item-rotate-title:hover{
+    color: #a9a9a9;
+}
+
+.property-name, .property-value{
+    font-size: 1.23em;
+}
+
 /*
     THE END main content
 */
@@ -1156,45 +1204,3 @@ content-wrapper
 /*
     THE END theme styles
 */
-
-
-.no-js .loading{
-    display: none !important;
-}
-
-.loading{
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    left: 0;
-    top: 0;
-    z-index: 9999;
-    overflow: hidden;
-    text-align: center;
-}
-
-.loading h1{
-    font-size: 1.9em;
-    text-transform: capitalize;
-}
-
-.loading h1, .loading img{
-    padding: 5px;
-    display: block;
-    margin: 0 auto;
-}
-
-.loading:before {
-  content: '';
-  display: inline-block;
-  height: 100%; 
-  vertical-align: middle;
-  background: #fff; 
- }
-
-.site-title-loading{
-     display: inline-block;
-  vertical-align: middle;
-  padding: 10px 15px;
-}
