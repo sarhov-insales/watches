@@ -1,8 +1,15 @@
+
 jQuery(document).ready(function($) {
 
 
-// The  sub menu open close
+$('.cart-inner').click(function() {
+	$('.cart_items_count').toggleClass('cart_items_count_white');
+			
+	$('.mini-cart').slideToggle('slow');	
+});
 
+
+// The  sub menu open close
 
 if ($(document.body).width() < 1200) {
 $('li.item ul').each(function(index) {
@@ -33,8 +40,8 @@ return false;
 
 // slider
 
- $(function () {
-        $('.rs-slider').refineSlide({
+$(function () {
+$('.rs-slider').refineSlide({
 maxWidth              : 1200,      // Max slider width - should be set to image width
 transition            : 'random',  // String (default 'cubeV'): Transition type ('custom', random', 'cubeH', 'cubeV', 'fade', 'sliceH', 'sliceV', 'slideH', 'slideV', 'scale', 'blockScale', 'kaleidoscope', 'fan', 'blindH', 'blindV')
 fallback3d            : 'sliceV', // String (default 'sliceV'): Fallback for browsers that support transitions, but not 3d transforms (only used if primary transition makes use of 3d-transforms)
@@ -53,9 +60,102 @@ arrowTemplate         : '<div class="rs-arrows"><a href="#" data-icon="&#x61;" c
 onInit                : function () {}, // Func: User-defined, fires with slider initialisation
 onChange              : function () {}, // Func: User-defined, fires with transition start
 afterChange           : function () {}  // Func: User-defined, fires after transition end
-        });
-    });
+});
+});
 
+
+
+
+// The animation fly to cart
+
+$('.flytocart').click(function () {
+$('.mini-cart').slideDown('slow');
+$('.cart_items_count').addClass('cart_items_count_white');
+$('body,html').animate({
+scrollTop: 0
+}, 400);
+var cart = $('.cart');
+var imgtodrag = $(this).closest('.flybox').find(".flyimage");
+var imgclone = imgtodrag.clone()
+.offset({
+top: imgtodrag.offset().top,
+left: imgtodrag.offset().left
+})
+.css({
+'opacity': '0.5',
+'position': 'absolute',
+'height': 'auto',
+'width': '240px',
+'z-index': '9999'
+})
+.appendTo($('html'))
+.animate({
+'top': cart.offset().top + 10,
+'left': cart.offset().left + 10,
+'width': 75,
+'height': 105
+},1000);
+imgclone.animate({
+'opacity':0
+});
+return false;
+}); 
+
+
+
+
+// carousel
+
+
+$("#carousel").flexisel({
+visibleItems: 3,
+animationSpeed: 1000,
+autoPlay: true,
+autoPlaySpeed: 3000,            
+pauseOnHover: true,
+enableResponsiveBreakpoints: true,
+responsiveBreakpoints: { 
+portrait: { 
+changePoint:480,
+visibleItems: 1
+}, 
+landscape: { 
+changePoint:640,
+visibleItems: 2
+},
+tablet: { 
+changePoint:768,
+visibleItems: 3
+}
+}
+});
+
+
+// quantity
+
+$(function(){
+   $('.plus').click(function(e){
+           e.preventDefault();
+     var qwt = $(this).parents('.quantity:first').find('.qwt').val();
+           qwt = ++qwt;  
+           $(this).parents('.quantity:first').find('.qwt').val(qwt);
+           $(this).parents('.quantity:first').find('.qwt2').val(qwt).trigger('change');
+     
+          recalcAmount(this);
+          });
+          $('.minus').click(function(e){
+           e.preventDefault();
+           var qwt = $(this).parents('.quantity:first').find('.qwt').val();
+           qwt = --qwt;  
+             if (qwt == 0){return false;
+             } else {
+             $(this).parents('.quantity:first').find('.qwt').val(qwt);
+             $(this).parents('.quantity:first').find('.qwt2').val(qwt).trigger('change');  
+              recalcAmount(this);  
+             }
+           });
+
+ });
 
 
 
