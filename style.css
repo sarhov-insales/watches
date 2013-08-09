@@ -107,81 +107,6 @@ li{
     line-height: 1.38em;
 }
 
-.sidebar-box{
-    margin-bottom: 20px;
-}
-
-.sidebar-box-item:last-child{
-    border-bottom: none;
-}
-
-.sidebar-box-title{
-    font-size:1.06em;
-    color: #333;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0 0 10px 0 ;
-    border-bottom: 3px solid #000;
-    margin-bottom: 10px;
-}
-
-.sidebar-box-item-title{
-    padding: 10px 0;
-}
-
-.sidebar-box-item>a{
-    display: block; 
-}
-
-.sidebar-box-item-image{
-    width: 100%;
-    max-width: 90px;
-}
-
-.hits .sidebar-box-item-more{
-    display: none;
-}
-
-.sidebar-box-item-more{
-    display: block;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 0.81em;
-    padding: 7px 0;
-
-}
-
-.sidebar-box-item-more:after{
-    color: inherit;
-    content: "\4f \4f";
-    font-family: 'icomoon';
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    margin-left: 0.74em;
-    text-transform: none;
-    vertical-align: middle;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -ms-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    position: relative;
-    right: 0;
-}
-
-.sidebar-box-item-more:hover{
-    color: #a9a9a9;
-}
-.sidebar-box-item-more:hover:after{
-        -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    right: -6px;
-}
 
 .editor{
     font-size: 0.81em;
@@ -788,6 +713,7 @@ body{
     background-color: rgba(0,0,0, 0.8);
     opacity: 1;
     text-align:center;
+    visibility: visible;
 }
 
 .ban-read-more{
@@ -796,6 +722,7 @@ body{
     font-size: 10em;
     width:100%;
     opacity: 0;
+    visibility: hidden;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -ms-transition: all 0.4s;
@@ -1309,6 +1236,120 @@ body{
     width: 25%;
     height: 350px;
     position: relative;
+}
+
+
+.sidebar-box{
+    margin-bottom: 20px;
+}
+
+.sidebar-box-item:last-child{
+    border-bottom: none;
+}
+
+.sidebar-box-title{
+    font-size:1.06em;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 0 10px 0 ;
+    border-bottom: 3px solid #000;
+    margin-bottom: 10px;
+}
+
+.sidebar-box-item-title{
+    padding: 10px 0;
+}
+
+.sidebar-box-item>a{
+    display: block; 
+}
+
+.sidebar-box-item-image{
+    width: 100%;
+    max-width: 90px;
+}
+
+.hits .sidebar-box-item-more{
+    display: none;
+}
+
+.sidebar-box-item-more{
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.81em;
+    padding: 7px 0;
+
+}
+
+.sidebar-box-item-more:after{
+    color: inherit;
+    content: "\4f \4f";
+    font-family: 'icomoon';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    margin-left: 0.74em;
+    text-transform: none;
+    vertical-align: middle;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    position: relative;
+    right: 0;
+}
+
+.sidebar-box-item-more:hover{
+    color: #a9a9a9;
+}
+
+.sidebar-box-item-more:hover:after{
+     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: -6px;
+}
+
+.sidebar-box-links-item{
+    display: block;
+    border-bottom: 1px solid #C9C8C8;
+    padding: 0.77em 0;
+    color: #333;
+    font-size: 0.81em;
+    margin-left: 5px;
+    line-height: 1.25em;
+    position: relative;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.sidebar-box-links-item:hover{
+    color: #000;
+}
+
+
+.sidebar-box-links-item:hover:before{
+    margin-right: 15px;
+    color: #ddd;
+}
+
+.sidebar-box-links-item:before{
+    margin-right: 0.38em;
+    position: relative;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 /* THE END sidebar*/
