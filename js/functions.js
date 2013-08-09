@@ -73,7 +73,7 @@ $('.mini-cart').slideDown('slow');
 $('.cart_items_count').addClass('cart_items_count_white');
 $('body,html').animate({
 scrollTop: 0
-}, 400);
+}, 1200);
 var cart = $('.cart');
 var imgtodrag = $(this).closest('.flybox').find(".flyimage");
 var imgclone = imgtodrag.clone()
@@ -94,7 +94,7 @@ left: imgtodrag.offset().left
 'left': cart.offset().left + 10,
 'width': 75,
 'height': 105
-},1000);
+},1200);
 imgclone.animate({
 'opacity':0
 });

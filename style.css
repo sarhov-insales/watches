@@ -1,12 +1,9 @@
-/*
-    globals for this theme
-*/
+/* globals for this theme */
 
 :root{
     font-size: 100%;
     font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
 }
-
 
 body{
     font-size: 100%;
@@ -19,6 +16,18 @@ a, a:visited, a:active, a:link, a:focus {
     cursor: pointer;
     outline: medium none;
     text-decoration: none;
+}
+
+a.item-link{
+    font-size: 0.81em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    display: block;
+}
+
+a.item-link:hover{
+    color: #A9A9A9;
 }
 
 img{
@@ -98,11 +107,27 @@ li{
     line-height: 1.38em;
 }
 
-
 .editor{
     font-size: 0.81em;
     color: #a3a3a3;
     line-height: 1.6;
+}
+
+.editor ul{
+    padding-left: 12px;
+}
+
+.editor li{
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+.editor li:hover:before{
+    color: #ddd;
 }
 
 .editor ul li:before{
@@ -132,6 +157,7 @@ li{
 
 /*THE END of globals for this theme*/
 
+
 /*theme styles*/
 
 body{
@@ -145,9 +171,8 @@ body{
     padding-bottom: 30px;
 }
 
-/*
-    site-name
-*/
+/* site-name */
+
 
 .site-name{
     padding-top:37px;
@@ -162,16 +187,10 @@ body{
     color: #000;
 }
 
+/* THE END site-name */
 
 
-/*
-  THE END site-name
-*/
-
-
-/*
-    top-menu and login
-*/
+/* top-menu and login */
 
 .ml-wrapper{
     background: #000;
@@ -212,19 +231,14 @@ body{
     color: #fff;
 }
 
-
 .login-open{
    color: #fff;
 }
 
-/*
-    THE END top-menu and login
-*/
+/* THE END top-menu and login */
 
 
-/*
-    cart
-*/
+/* cart */
 
 .cart-outer{
     border-top: 1px solid #383838;
@@ -257,8 +271,6 @@ body{
     font-size: 1.5em;
     margin-right: 0.94em;
 }
-
-
 
 .cart_items_count{
     font-size: 1.05em;
@@ -310,7 +322,6 @@ body{
     margin-top: 20px;
 }
 
-
 .mini-cart-image{
     width: 70px;
 }
@@ -354,19 +365,14 @@ body{
     border-top: 1px solid #ddd ;
 }
 
-
 .mci-footer p, .mci-buy{
     padding: 10px 0;
 }
 
-/*
-    THE END cart
-*/
+/* THE END cart */
 
 
-/*
-category menu
-*/
+/* category menu */
 
 .main-categorires-wrap{
     margin-bottom: 30px;
@@ -442,8 +448,6 @@ category menu
     border-radius: 50%;
     color: #ccc;
 }
-
-
 
 .sub-parent:hover > ul, .subsub-parent:hover  >ul{
     top:100%;
@@ -541,15 +545,10 @@ category menu
     color: #fff;
 }
 
-/*
-    THE END category menu
-*/
+/* THE END category menu */
 
 
-
-/*
-    searchbox
-*/
+/* searchbox */
 
 .searchbox{
     right:0;
@@ -613,13 +612,10 @@ category menu
     border: 1px solid #000;
 }
 
-/*
-    THE END searchbox
-*/
+/* THE END searchbox */
 
-/*
-    slider
-*/
+
+/* slider */
 
 .slider{
     background: none repeat scroll 0 0 #000000;
@@ -627,13 +623,10 @@ category menu
     padding: 10px;
 }
 
-/*
-    THE END slider
-*/
+/* THE END slider */
 
-/*
-    banner
-*/
+
+/* banner */
 
 .banners{
     width:100%;
@@ -688,8 +681,6 @@ category menu
     width:70%;
 }
 
-
-
 .banner .caption p{
     font-size: 1.7em;
     text-transform: uppercase;
@@ -742,15 +733,9 @@ category menu
     padding: 12% 0;
 }
 
-/*
-    THE END banner
-*/
+/* THE END banner */
 
-
-
-/*
-    main-page-products
-*/
+/* main-page-products */
 
 .main-page-products-wrapper{
     margin-bottom: 30px;
@@ -791,8 +776,6 @@ category menu
     padding-bottom: 20px;
 }
 
-
-
 .main-page-product{
     width: 100%;
     height: 100%;
@@ -802,19 +785,9 @@ category menu
     margin-right: 10px;
 }
 
-.mp-product-title a{
-    font-size: 0.81em;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #000;
+.mp-product-title{
     padding: 10px 0;
-    display: block;
 }
-
-.mp-product-title a:hover{
-    color: #A9A9A9;
-}
-
 
 .mp-product-description{
     font-style: italic;
@@ -896,16 +869,12 @@ category menu
     border: 1px solid #020202;
 }
 
-/*
-    THE END main-page-products
-*/
+/* THE END main-page-products */
 
 
 
+/* footer */
 
-/*
-    footer
-*/
 .main-foot{
     padding: 30px 0 20px;
     border-top: 5px solid #000;
@@ -933,18 +902,12 @@ category menu
     margin-bottom: 30px;
 }
 
-
-/*
-    THE END footer
-*/
+/* THE END footer */
 
 
 
 
-
-/*
-    box
-*/
+/* box */
 
 .box-centering{
     overflow: hidden;
@@ -974,16 +937,10 @@ category menu
     color: #000;
 }
 
-/*
-    THE END box
-*/
+/* THE END box */
 
 
-
-
-/*
-content-wrapper
-*/
+/* content-wrapper */
 
 .content-wrapper{
     margin-bottom: 30px;
@@ -1008,18 +965,10 @@ content-wrapper
 .breadcrumb a:hover{
     color: #A9A9A9;
 }
-/*
-    THE END content wrapper
-*/
 
+/* THE END content wrapper */
 
-
-
-
-/*
-    main-content
-*/
-
+/* main-content */
 
 .main-content{
     width: 75%;
@@ -1179,17 +1128,49 @@ content-wrapper
     font-size: 1.23em;
 }
 
-/*
-    THE END main content
-*/
+.featured-products article:last-child{
+    border: none;
+}
 
+.featured-products img{
+    width: 100%;
+    max-width: 100px;
+    margin-right: 15px;
+}
 
+.featured-products article h1{
+    padding: 10px 0 10px;
+}
 
+.featured-products .item-link{
+    display: inline-block;
+    font-size: 0.94em;
+}
 
+.featured-products .info-wrap{
+    overflow: hidden;
+    padding-right: 20px;
+    border-right: 1px solid #E2E2E2;
+    width: 80%;
+}
 
-/*
-    sidebar
-*/
+.featured-products .new-price{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.feat-buy-zone{
+    width: 20%;
+    padding-left: 20px;
+}
+
+.review-item{
+    border-bottom-style: dotted;
+}
+
+/*THE END main content*/
+
+/* sidebar */
 
 .sidebar{
     width: 25%;
@@ -1197,10 +1178,7 @@ content-wrapper
     position: relative;
 }
 
-/*
-    THE END sidebar
-*/
+/* THE END sidebar*/
 
-/*
-    THE END theme styles
-*/
+
+/*THE END theme styles*/

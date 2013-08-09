@@ -103,22 +103,30 @@ table {
 .no-js .loading {
 display: none !important; /* 2 */
 }
+
+
 .loading {
-position: fixed;
-height: 100%;
-width: 100%;
-background-color: #000;
-left: 0;
-top: 0;
-z-index: 9999;
-overflow: hidden;
-text-align: center;
--webkit-transition: all 1.1s;
--moz-transition: all 1.1s;
--ms-transition: all 1.1s;
--o-transition: all 1.1s;
-transition: all 1.1s; /* 2 */
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: 9998;
+  overflow: hidden;
+  text-align: center;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
+
+.all-wrap{
+  display: none;
+}
+
+
 .loading-out {
 opacity: 0;
 visibility: hidden;
@@ -128,6 +136,15 @@ visibility: hidden;
 -o-transform: scale(10);
 transform: scale(10); /* 2 */
 }
+
+.loading-out + .all-wrap, .no-js .all-wrap{
+  display: block !important;
+}
+
+/*.loading-out #loading{
+  display: none;
+}
+*/
 .loading h1 {
 font-size: 1.9em;
 font-weight: bold;
