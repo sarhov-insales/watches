@@ -1168,6 +1168,31 @@ body{
     border-bottom-style: dotted;
 }
 
+.review-item:last-child{
+    border: none;
+}
+
+.review-author{
+    display: block;
+    font-size: 1.4em;
+}
+
+
+.review-author:before, .review-date:before{
+    font-style: normal !important;
+    margin-right: 5px;
+}
+
+.date-author-wrap{
+    width: 15%;
+    padding-right: 10px;
+}
+
+.stars-text-wrap{
+    width: 85%;
+    padding-left: 10px;
+}
+
 /*THE END main content*/
 
 /* sidebar */
