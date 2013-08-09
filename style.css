@@ -1193,6 +1193,38 @@ body{
     padding-left: 10px;
 }
 
+.see-also-item-outer{
+    width: 33.33%;
+    padding-right: 30px;
+}
+
+.see-also-item-image{
+    display: block;
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.see-also-description, .see-also-price .avialable{
+    display: none;
+}
+
+.see-also-item-title{
+    padding: 10px 0;
+}
+
+.see-also-item-title a.item-link{
+    font-size: 0.91em;
+}
+
+.see-also-buy-zone{
+    margin: 10px 0 5px;
+}
+
+.see-also-buy-zone .mybutton{
+    margin-right: 10px;
+}
+
 /*THE END main content*/
 
 /* sidebar */
