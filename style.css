@@ -107,6 +107,82 @@ li{
     line-height: 1.38em;
 }
 
+.sidebar-box{
+    margin-bottom: 20px;
+}
+
+.sidebar-box-item:last-child{
+    border-bottom: none;
+}
+
+.sidebar-box-title{
+    font-size:1.06em;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 0 10px 0 ;
+    border-bottom: 3px solid #000;
+    margin-bottom: 10px;
+}
+
+.sidebar-box-item-title{
+    padding: 10px 0;
+}
+
+.sidebar-box-item>a{
+    display: block; 
+}
+
+.sidebar-box-item-image{
+    width: 100%;
+    max-width: 90px;
+}
+
+.hits .sidebar-box-item-more{
+    display: none;
+}
+
+.sidebar-box-item-more{
+    display: block;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.81em;
+    padding: 7px 0;
+
+}
+
+.sidebar-box-item-more:after{
+    color: inherit;
+    content: "\4f \4f";
+    font-family: 'icomoon';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    margin-left: 0.74em;
+    text-transform: none;
+    vertical-align: middle;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    position: relative;
+    right: 0;
+}
+
+.sidebar-box-item-more:hover{
+    color: #a9a9a9;
+}
+.sidebar-box-item-more:hover:after{
+        -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    right: -6px;
+}
+
 .editor{
     font-size: 0.81em;
     color: #a3a3a3;
@@ -972,7 +1048,7 @@ body{
 
 .main-content{
     width: 75%;
-    padding-right: 50px;
+    padding: 10px 50px 0 0;
 }
 
 .item-product-image-outer{
