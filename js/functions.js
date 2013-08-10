@@ -1,6 +1,57 @@
 
+
+
 jQuery(document).ready(function($) {
 
+// list-grid
+
+$(function() {
+$('.products').addClass('grid');
+
+var cc = $.cookie('list_grid');
+if (cc == 'g') {
+$('.products').addClass('grid');
+$('#grid').addClass('active').siblings().removeClass('active');
+} else {
+$('.products').addClass('list');
+$('.products').removeClass('grid');
+$('#list').addClass('active').siblings().removeClass('active');
+}
+});
+
+  
+$('#grid').click(function() {
+if($(this).hasClass("active")) {
+return false;
+} else {
+
+$('.products').fadeOut(300, function() {
+$('#grid').addClass('active').siblings().removeClass('active');
+$(this).addClass('grid').removeClass('list').fadeIn(300);
+$.cookie('list_grid', 'g');
+});
+return false;
+}
+});
+  
+$('#list').click(function() {
+
+if($(this).hasClass("active")) {
+return false;
+} else {
+
+$('.products').fadeOut(300, function() {
+$(this).addClass('list').removeClass('grid').fadeIn(300);
+$('#list').addClass('active').siblings().removeClass('active');
+$.cookie('list_grid', 'l');
+});
+return false;
+}
+});
+
+
+
+// cart
 
 $('.cart-inner').click(function() {
 	$('.cart_items_count').toggleClass('cart_items_count_white');

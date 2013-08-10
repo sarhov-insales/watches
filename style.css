@@ -292,10 +292,20 @@ body{
     font-size: 1.5em;
     margin-left: 0.94em;
     vertical-align: middle;
+    display: inline-block;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
 }
 
 .cart_items_count_white:after{
-    content:"\f106";
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .cart_items_count_white{
@@ -606,7 +616,6 @@ body{
     border-top:1px solid #C9C8C8;
     border-left:1px solid #C9C8C8;
     border-right:1px solid #C9C8C8;
-    w
 }
 
 .submit-button:hover{
@@ -709,7 +718,7 @@ body{
 }
 
 .banner:hover .ban-read-more{
-    font-size: 1.8em;
+    font-size: 40px;
     background-color: rgba(0,0,0, 0.8);
     opacity: 1;
     text-align:center;
@@ -719,8 +728,9 @@ body{
 .ban-read-more{
     right:0;
     top:0;
-    font-size: 10em;
+    font-size: 150px;
     width:100%;
+    text-shadow: 0 0 7px #37E400;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.4s;
@@ -975,7 +985,7 @@ body{
 
 .main-content{
     width: 75%;
-    padding: 10px 50px 0 0;
+    padding: 0 50px 0 0;
 }
 
 .item-product-image-outer{
@@ -1234,12 +1244,11 @@ body{
 
 .sidebar{
     width: 25%;
-    height: 350px;
     position: relative;
 }
 
 
-.sidebar-box{
+.sidebar-box, .page{
     margin-bottom: 20px;
 }
 
@@ -1247,7 +1256,7 @@ body{
     border-bottom: none;
 }
 
-.sidebar-box-title{
+.sidebar-box-title, .page-title{
     font-size:1.06em;
     color: #333;
     text-transform: uppercase;
@@ -1353,6 +1362,175 @@ body{
 }
 
 /* THE END sidebar*/
+
+
+/*category page*/
+
+.cat-desc-item p{
+    font-style: italic;
+    color: #333;
+}
+
+.cat-desc-item img{
+    margin-right: 10px;
+}
+
+.cat-items-count{
+    font-style: italic;
+    font-size: 0.65em;
+    line-height: 2.64em;
+}
+
+.sub-cat-item-outer{
+    width: 20%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.sub-cat-title{
+    text-transform: uppercase;
+}
+
+.sub-cat-item-title{
+    color: #a9a9a9;
+    font-size: 0.81em;
+}
+
+.sub-cat-item-title:before{
+    margin-right: 5px;
+}
+
+.sub-cat-item:hover .sub-cat-item-title{
+    color: #000;
+}
+
+.products-item-wrap-outer{
+    margin-left: -40px;
+    
+}
+
+.products-item-outer{
+    width: 33.33%;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.products-item{
+    margin-bottom: 0;
+}
+
+.products-item-image-link{
+    display: block;
+    text-align: center;
+}
+
+.products-item-desc-text{
+    line-height: 1.2em;
+    font-size: 0.91em;
+}
+
+.compare-wrap{
+    padding: 0 0 10px 0;
+}
+
+.products-item-title {
+    padding: 10px 0;
+}
+
+.products-item .buy-zone{
+    padding: 10px 0;
+}
+
+.products-item-more-link{
+    padding-top: 16px;
+}
+
+.buy-zone-buttons input.buy_button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.grid .products-item-desc-text{
+    display: none;
+}
+
+.list .products-item-outer{
+    width: 100%;
+}
+
+.list .products-info-zone{
+    width: 80%;
+    float: left;
+    padding-right: 15px;
+    border-right: 1px solid #E2E2E2;
+}
+
+.list .products-item-image-link img{
+    float: left;
+}
+
+.list .buy-zone{
+    float: right;
+    width: 20%;
+     padding-left: 15px;
+}
+
+.products img{
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+    -ms-transition: all 1.2s;
+    -o-transition: all 1.2s;
+    transition: all 1.2s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.grid img, .list img{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.list-grid a{
+    background: none repeat scroll 0 0 #282727;
+    border: 1px solid #E39D9D;
+    color: #FFF1F1;
+    display: inline-block;
+    font-size: 1.2em;
+    padding:  6px 6px 5px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.list-grid a:hover{
+    -webkit-box-shadow: 0 0 3px #333;
+    -moz-box-shadow: 0 0 3px #333;
+    box-shadow: 0 0 3px #333;
+}
+
+.list-grid a.active{
+     background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #D6C2C2;
+    color: #333;
+    display: inline-block;
+    cursor: default;
+}
+
+.list-grid a.active:hover{
+-webkit-box-shadow: 0 0 0 #fff;
+-moz-box-shadow: 0 0 0 #fff;
+box-shadow: 0 0 0 #fff;
+}
+
+
 
 
 /*THE END theme styles*/
