@@ -112,11 +112,9 @@ afterChange           : function () {}  // Func: User-defined, fires after trans
 // The animation fly to cart
 
 $('.flytocart').click(function () {
-$('.mini-cart').slideDown('slow');
+
 $('.cart_items_count').addClass('cart_items_count_white');
-$('body,html').animate({
-scrollTop: 0
-}, 1200);
+
 var cart = $('.cart');
 var imgtodrag = $(this).closest('.flybox').find(".flyimage");
 var imgclone = imgtodrag.clone()
@@ -138,6 +136,11 @@ left: imgtodrag.offset().left
 'width': 75,
 'height': 105
 },1200);
+$('body,html').animate({
+scrollTop: 0
+}, 700);
+
+$('.mini-cart').slideDown('slow');
 imgclone.animate({
 'opacity':0
 });

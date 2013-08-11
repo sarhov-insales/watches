@@ -260,6 +260,10 @@ body{
     padding: 15px 0 0;
 }
 
+.cart{
+    white-space: nowrap;
+}
+
 .cart-inner{
     cursor: pointer;
 }
@@ -337,7 +341,7 @@ body{
     right: -15px;
     top: 40px;
     width: 300px;
-    z-index: 80001;
+    z-index: 8001;
      padding: 0px 14px;
 }
 
@@ -603,6 +607,7 @@ body{
     width:55px;
     font-size: 1.3em;
     cursor: pointer;
+    display: none;
  }
 
 .drop-open, .mobile-nav{
@@ -772,16 +777,12 @@ body{
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
     transition: all 0.4s linear;
-    width:70%;
+    width:80%;
     height: 100%;
-    display: table;
+    padding: 1.2em 0 0 1.2em;
 }
 
 
-.caption a{
-    vertical-align: middle;
-    display: table-cell;
-}
 
 .banner .caption p{
     font-size: 1.7em;

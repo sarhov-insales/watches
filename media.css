@@ -89,7 +89,7 @@
 		display: none;
 	}
 
-	.drop-open{
+	.main-categorires-wrap .drop-open{
 		display: table;
 		padding-right: 10px;
 	}
@@ -107,17 +107,55 @@
 	}
 
 	.banner .caption{
-		font-size: 80%;
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.mp-product-image{
+		display: block;
+		float: none;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1100px){
+	.main-foot .box{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width:900px){
+
+	.banner .caption{
+		font-size: 10px;
+	}
+
+	.banners{
+		margin-top: 10px;
 	}
 }
 
 
 @media only screen and (max-width:900px){
 
-	
+	.mp-product-image{
+		float: left;
+	}
+
+	.mp-product-description{
+		padding: 20px 0;
+	}
+
+	.main-page-article-outer{
+		width: 100%;
+		float: none;
+		border:1px solid #ccc;
+		margin-bottom: 20px;
+	}
 
 	.ml-wrapper{
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left:0;
 		width: 100%;
@@ -175,6 +213,65 @@
     width: 100%;
     margin-right: -40px;
     border: 1px solid #C9C8C8 ;
+	}
+
+	.banner .caption{
+		font-size: 10px;
+	}
+
 }
 
+@media only screen and (max-width:800px){
+
+	.main-foot .box{
+		width: 100%;
+		float: none;
+	}
+
+	.main-foot .drop{
+		display: none;
+	}
+
+	.main-foot .drop-open{
+		display: table;
+	}
+
+	.banners{
+		margin-top: 10px;
+	}
+
+	.banner .caption{
+		font-size: 8px;
+	}
+
+	.banner .caption span, .ban-read-more{
+		display: none;
+	}
+}
+
+@media only screen and (max-width:600px){
+	.banners{
+		display: none;
+	}
+
+	.basket-text{
+		display: none;
+	}
+
+	.slider{
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width:450px){
+		.mp-product-image{
+		float: none;
+	}
+}
+
+@media only screen and (max-width:450px){
+		.cart-count-text{
+			display: none;
+		}
+	}
 }
