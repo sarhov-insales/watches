@@ -1,0 +1,180 @@
+@media only screen and (max-width:1240px){
+	body{
+		width: 90%;
+	}
+
+	.main-cat{
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		z-index: 9999;
+		display: none;
+
+	}
+
+	.main-cat ul{
+		display: none;
+		-webkit-transition: all 0s;
+		-moz-transition: all 0s;
+		-ms-transition: all 0s;
+		-o-transition: all 0s;
+		transition: all 0s;
+	}
+
+	.main-cat .item{
+		float: none;
+		display: block;
+		width: 100%;
+		z-index: 9999;
+		border: none;
+		border-top: 1px solid #787777;
+	}
+
+	.main-cat li{
+		font-size: 11px;
+
+		background-color: #000;
+	}
+
+	.main-cat .item:hover{
+		border-top-color: #787777;
+	}
+
+	.main-cat >a:hover, .main-cat li.active > a{
+		color: #fff;
+	}
+
+
+	.main-cat a{
+		display: block;
+		width: 100%;
+	}
+
+	.item.sub-parent:after{
+		display: none;
+	}
+
+	.item ul{	
+		position: static;
+		opacity: 1;
+	    top: 0;
+	    visibility: visible;
+	    background-color: #000;
+	}
+
+	.main-cat a{
+		color: #787777;
+	}
+
+	.main-cat .item:hover, 	.main-cat .item:active,	.main-cat .item:focus   {
+		z-index: 9999;
+		background-color: #000;
+	}
+
+	.mobile-nav{
+		width: 100%;
+		display: block;
+		height: ;
+	}
+
+	.main-cat >li >ul{
+		padding:0 10px;
+	}
+
+	.main-cat li ul >li >ul{
+		padding:0 20px;
+	}
+
+	.subsub-parent:after{
+		display: none;
+	}
+
+	.drop-open{
+		display: table;
+		padding-right: 10px;
+	}
+
+	.main-categorires-wrap{
+		clear: both;
+	}
+
+	.site-name{
+		width: 30%;
+	}
+
+	.searchbox .input-border{
+		width: 300px;
+	}
+
+	.banner .caption{
+		font-size: 80%;
+	}
+}
+
+
+@media only screen and (max-width:900px){
+
+	
+
+	.ml-wrapper{
+		position: fixed;
+		top: 0;
+		left:0;
+		width: 100%;
+		z-index: 9999;
+		padding: 0 0;
+	}
+
+	.top-menu:before{
+		display: block;
+	}
+
+	.top-menu-items{
+		display: none;
+	}
+
+	.top-menu, .login-form, .cart-outer{
+		float:left;	
+		width: 33.33%;
+		border: none;
+		border-right: 1px solid #444444;
+		text-align: center;
+		color: #fff;
+		padding: 15px 8px;
+		height: 50px;
+	}
+
+	.top-menu, .login-form{
+		font-size: 22px;
+	}
+
+	.mini-cart{
+		top:33px;
+		right: -8px;
+	}
+
+	.site-header{
+		margin-top: 50px;
+		padding-bottom: 0;
+	}
+
+	.site-name{
+		float: none;
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.searchbox{
+		float: none;
+		width:100%;
+		margin-bottom: 10px;
+	}
+
+	.searchbox .input-border {
+    width: 100%;
+    margin-right: -40px;
+    border: 1px solid #C9C8C8 ;
+}
+
+}
