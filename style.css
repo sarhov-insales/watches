@@ -1084,12 +1084,15 @@ body{
 .item-product-image-outer{
     width: 40%;
     padding-right: 25px;
-    min-width: 250px
 }
 
 .item-product-image{
     border:1px solid #C9C8C8;
     margin-bottom: 20px;
+}
+
+.item-product-image .item-first-image img{
+    width: 100%;
 }
 
 .item-product-image:hover{
@@ -1329,6 +1332,7 @@ body{
 
 .see-also-buy-zone .mybutton{
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /*THE END main content*/
@@ -1357,6 +1361,10 @@ body{
     padding: 0 0 10px 0 ;
     border-bottom: 3px solid #000;
     margin-bottom: 10px;
+}
+
+.sidebar-box-info-wrap {
+    overflow: hidden;
 }
 
 .sidebar-box-item-title{

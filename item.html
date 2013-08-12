@@ -15,9 +15,10 @@
             
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="web_icons.css">
-    <link rel="stylesheet" href="media.css">
+    
     <link rel="stylesheet" href="plugins.css">
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="media.css">
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
     <!-- don't delete -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -572,7 +573,7 @@
                 <span class="new-price fl">450 руб</span>
                 <span class="avialable fr"><em>В наличии</em></span>
             </div>
-            <div class="see-also-buy-zone">
+            <div class="see-also-buy-zone cf">
                 <input type="submit" value="в корзину" class="buy_button mybutton buttons flytocart"><a href="item.html" class="mybutton buttons">подробнее</a>
             </div>
         </article>
@@ -625,9 +626,11 @@
 
 <div class="sidebar fl">
 
-<section class="sidebar-box hits">
+<section class="sidebar-box hits rel">
     <h1 class="sidebar-box-title">хиты продаж</h1>
-    <span class="open-box fr"></span>
+   <span class="drop-open drop-open-box abs" data-icon=">"></span>
+
+    <div class="drop">
     <article class="cf bb sidebar-box-item">
         <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
         <div class="sidebar-box-info-wrap">
@@ -636,87 +639,45 @@
             <a href="" class="sidebar-box-item-more">подробнее</a>
         </div>
     </article>
-    <article class="cf bb sidebar-box-item">
-        <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
-        <div class="sidebar-box-info-wrap">
-            <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
-            <p class="editor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
-            <a href="" class="sidebar-box-item-more">подробнее</a>
-        </div>
-    </article>
-    <article class="cf bb sidebar-box-item">
-        <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
-        <div class="sidebar-box-info-wrap">
-            <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
-            <p class="editor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
-            <a href="" class="sidebar-box-item-more">подробнее</a>
-        </div>
-    </article>
-    <article class="cf bb sidebar-box-item">
-        <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
-        <div class="sidebar-box-info-wrap">
-            <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
-            <p class="editor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
-            <a href="" class="sidebar-box-item-more">подробнее</a>
-        </div>
-    </article>
+    </div>  <!-- sidebar -drop -->
 </section>
 
-<section class="sidebar-box">
+<section class="sidebar-box rel">
     <h1 class="sidebar-box-title">Последние поступления</h1>
-    <span class="open-box fr"></span>
-    <article class="cf bb sidebar-box-item">
-        <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
-        <div class="sidebar-box-info-wrap">
-            <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
-            <p class="editor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
-            <a href="" class="sidebar-box-item-more">подробнее</a>
-        </div>
-    </article>
-    <article class="cf bb sidebar-box-item">
-        <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
-        <div class="sidebar-box-info-wrap">
-            <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
-            <p class="editor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
-            <a href="" class="sidebar-box-item-more">подробнее</a>
-        </div>
-    </article>
-    <article class="cf bb sidebar-box-item">
-        <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
-        <div class="sidebar-box-info-wrap">
-            <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
-            <p class="editor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
-            <a href="" class="sidebar-box-item-more">подробнее</a>
-        </div>
-    </article>
-    <article class="cf bb sidebar-box-item">
-        <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
-        <div class="sidebar-box-info-wrap">
-            <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
-            <p class="editor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
-            <a href="" class="sidebar-box-item-more">подробнее</a>
-        </div>
-    </article>
+   <span class="drop-open drop-open-box abs" data-icon=">"></span>
+    <div class="drop">
+        <article class="cf bb sidebar-box-item">
+            <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
+            <div class="sidebar-box-info-wrap">
+                <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
+                <p class="editor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
+                <a href="" class="sidebar-box-item-more">подробнее</a>
+            </div>
+        </article>
+    </div> <!-- drop-sidebar -->
 </section>
 
-<section class="sidebar-box">
+<section class="sidebar-box rel">
     <h1 class="sidebar-box-title">Специалное</h1>
-    <span class="open-box fr"></span>
-    <article class="cf bb sidebar-box-item">
-        <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
-        <div class="sidebar-box-info-wrap">
-            <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
-            <p class="editor">Lorem ipsum m amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
-            <span class="new-price">450 руб</span>
-            <span class="old-price">550 руб</span>
-        </div>
-    </article>
+   <span class="drop-open drop-open-box abs" data-icon=">"></span>
+
+    <div class="drop">
+        <article class="cf bb sidebar-box-item">
+            <a href="item.html" class="fl"><img src="sidebar-box-image.jpg" alt="" class="sidebar-box-item-image"></a>
+            <div class="sidebar-box-info-wrap">
+                <h2 class="sidebar-box-item-title"><a href="" class="item-link">название товара</a></h2>
+                <p class="editor">Lorem ipsum m amet tenetur facere quae laudantium blanditiis deserunt. Aut fuga impedit nemo.</p>
+                <span class="new-price">450 руб</span>
+                <span class="old-price">550 руб</span>
+            </div>
+        </article>
+     </div>
 </section>
 
-<section class="sibebar-box">
+<section class="sibebar-box rel">
     <h1 class="sidebar-box-title">Информация</h1>
-    <span class="open-box"></span>
-    <nav class="sidebar-box-links">
+   <span class="drop-open drop-open-box abs" data-icon=">"></span>
+    <nav class="sidebar-box-links drop">
         <a href="page.html" data-icon="&#x72;" class="sidebar-box-links-item">Доставка</a>
         <a href="page.html" data-icon="&#x72;" class="sidebar-box-links-item">Доставка</a>
         <a href="page.html" data-icon="&#x72;" class="sidebar-box-links-item">Доставка</a>
@@ -732,81 +693,88 @@
 
 <footer class="main-foot cf"> 
     <div class="box-centering">
-        <section class="box fl">
-            <h1 class="box-title cf">
-                название бокса
-                <span class="open-box fr">
-                    open-box
-                </span>
-            </h1>
-            <nav class="links">
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-            </nav> <!-- links -->
-        </section>   <!-- box --> 
-            <section class="box fl">
-            <h1 class="box-title cf">
-                название бокса
-                <span class="open-box fr">
-                    open-box
-                </span>
-            </h1>
-            <nav class="links">
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-            </nav> <!-- links -->
-        </section>   <!-- box --> 
-            <section class="box fl">
-            <h1 class="box-title cf">
-                название бокса
-                <span class="open-box fr">
-                    open-box
-                </span>
-            </h1>
-            <nav class="links">
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-            </nav> <!-- links -->
-        </section>   <!-- box --> 
-            <section class="box fl">
-            <h1 class="box-title cf">
-                название бокса
-                <span class="open-box fr">
-                    open-box
-                </span>
-            </h1>
-            <nav class="links">
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-                <a href="">ссылка</a>
-            </nav> <!-- links -->
-        </section>   <!-- box --> </div>
+
+
+<section class="box fl rel">
+<h1 class="box-title cf">
+название бокса
+
+</h1>
+<span class="drop-open drop-open-box abs" data-icon=">"></span>
+<nav class="links drop">
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+</nav> <!-- links -->
+</section>   <!-- box -->
+
+
+<section class="box fl rel">
+<h1 class="box-title cf">
+название бокса
+
+</h1>
+<span class="drop-open drop-open-box abs" data-icon=">"></span>
+<nav class="links drop">
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+</nav> <!-- links -->
+</section>   <!-- box -->
+
+
+<section class="box fl rel">
+<h1 class="box-title cf">
+название бокса
+
+</h1>
+<span class="drop-open drop-open-box abs" data-icon=">"></span>
+<nav class="links drop">
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+</nav> <!-- links -->
+</section>   <!-- box -->
+
+
+<section class="box fl rel">
+<h1 class="box-title cf">
+название бокса
+
+</h1>
+<span class="drop-open drop-open-box abs" data-icon=">"></span>
+<nav class="links drop">
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+<a href="">ссылка</a>
+</nav> <!-- links -->
+</section>   <!-- box --> </div>
+
+
+
+
+
 </footer> <!-- site-footer -->
 
 <div class="copyright">
     <span class="copy-date"> &copy; 2013</span> Созданно в <a class="copy-url" href="http://insales.ru">InSales.ru</a>
 </div>
 </div>
-
 </body>
-
 </html>
