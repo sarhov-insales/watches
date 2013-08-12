@@ -101,6 +101,7 @@ li{
     font-size: 1.38em;
     line-height: 1.38em;
     font-style: italic;
+    white-space: nowrap;
 }
 
 .old-price{
@@ -341,7 +342,7 @@ body{
     right: -15px;
     top: 40px;
     width: 300px;
-    z-index: 8001;
+    z-index: 8005;
      padding: 0px 14px;
 }
 
@@ -652,7 +653,7 @@ body{
 
 .searchbox{
     right:0;
-    z-index: 4;
+    z-index: 8001;
     position: relative;
 }
 
@@ -1519,6 +1520,7 @@ body{
 .products-item-desc-text{
     line-height: 1.2em;
     font-size: 0.91em;
+    overflow: hidden;
 }
 
 .compare-wrap{

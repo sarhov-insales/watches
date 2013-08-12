@@ -1,6 +1,19 @@
-@media only screen and (max-width:1240px){
+@media only screen and (max-width:1245px){
 	body{
 		width: 90%;
+	}
+
+	.grid ..products-item-outer{
+		padding-left: 20px;
+	}
+
+	.grid .products-item-wrap-outer{
+		margin-left: -20px;
+	}
+
+	.grid .buy-zone-buttons .mybutton{
+		width: 100%;
+		text-align: center;
 	}
 
 	.main-cat{
@@ -125,7 +138,33 @@
 	}
 }
 
+@media only screen and (max-width:1000px){
+	.grid .products-item-outer{
+		width: 50%;
+	}
+
+	.grid .buy-zone-buttons .mybutton{
+		width:auto;
+		text-align: center;
+	}
+
+}
+
 @media only screen and (max-width:900px){
+
+
+	.grid .buy-zone-buttons .mybutton{
+		width: 100%;
+		text-align: center;
+	}
+
+	.list .products-info-zone{
+		width: 70%;
+	}
+
+	.list .buy-zone{
+		width: 30%;
+	}
 
 	.banner .caption{
 		font-size: 10px;
@@ -222,6 +261,19 @@
 }
 
 @media only screen and (max-width:800px){
+
+	.products .products-item-wrap-outer .products-item-outer{
+		width: 100% !important;
+		float: none !important;
+	}
+
+	.products-info-zone{
+		float: left !important;
+	}
+
+	.products-item-desc-text{
+		display: block !important;
+	}
 
 	.main-foot .box{
 		width: 100%;
